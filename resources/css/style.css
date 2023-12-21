@@ -1,0 +1,602 @@
+/*--------------------------------
+SETTAGGI GENERALI STILE PRESTO.IT
+---------------------------------*/
+:root{
+    --myWhite: rgb(255, 255, 255);
+    --myOrange: rgb(255, 183, 0);
+    --myPurple: rgb(160, 0, 240);
+}
+body{
+    background-color: var(--myWhite);
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+}
+
+/* Classi Color-Text Root */
+.textMyWhite{
+    color: var(--myWhite);
+}
+.textMyBlack{
+    color: black;
+}
+.textMyOrange{
+    color: var(--myOrange);
+}
+.textMyPurple{
+    color: var(--myPurple);
+}
+
+/* Classi BGColor Root */
+.bgMyWhite{
+    background-color: var(--myWhite);
+}
+.bgMyBlack{
+    background-color: black;
+}
+.bgMyOrange{
+    background-color: var(--myOrange);
+}
+.bgMyPurple{
+    background-color: var(--myPurple);
+}
+
+/* Gestione dei fonts */
+.fontMontserrat{
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*--------------------------------
+SETTAGGI NAVBAR
+---------------------------------*/
+.bgNavbar{
+    background-color: var(--myPurple);
+}
+.nav-link{
+    color: var(--myWhite);
+}
+.nav-link:hover{
+    color: rgba(255, 255, 255, 0.623);
+}
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+    color: var(--myWhite);
+}
+.nav-link:focus {
+    color: var(--myWhite);
+}
+.logoNavbar{
+    height: 8vh;
+}
+.revisorBadge:hover{
+    background-color: var(--myWhite);
+    color: var(--myOrange);
+    border: 1.5px solid var(--myOrange);
+}
+.dropdown-menu{
+    background-color: transparent;
+    border: none;
+}
+.dropdown-menu[data-bs-popper] {
+    top: 70%;
+    left: 2%;
+    margin-top: var(--bs-dropdown-spacer);
+}
+.dropdown-item{
+    color: var(--myWhite);
+    background-color: none;
+    font-size: 70%;
+    font-weight: 500;
+}
+.dropdown-item:hover{
+    color: rgba(255, 255, 255, 0.596);
+    background-color: transparent;
+}
+.navbar-toggler {
+    padding: var(--bs-navbar-toggler-padding-y) var(--bs-navbar-toggler-padding-x);
+    font-size: var(--bs-navbar-toggler-font-size);
+    line-height: 1;
+    color: rgb(255, 255, 255);
+    background-color: var(--myPurple);
+    border: var(--bs-border-width) solid var(--bs-navbar-toggler-border-color);
+    /* border-radius: var(--bs-navbar-toggler-border-radius); */
+    border-radius: 0;
+    transition: var(--bs-navbar-toggler-transition);
+}
+
+/* .navbar-toggler[aria-expanded="true"] {
+    border: 1px solid var(--myWhite);
+}
+.navbar-toggler[aria-expanded="false"] {
+    border: none; 
+}
+.navbar-toggler.menu-open {
+    border: 2px solid transparent;
+} */
+
+a.nav-link{
+    font-weight: 500;
+    font-size: 100%;
+    color:white;
+}
+button.nav-link{
+    font-weight: 500;
+    font-size: 100%;
+    color:white;
+}
+.searchInput{
+    min-width: 25vw;
+    max-width: 25vw;
+}
+.searchButtonPosition{
+    position: absolute;
+    top: 0;
+    right: 3%;
+}
+
+/*--------------------------------
+MODAL SELEZIONE LINGUE
+---------------------------------*/
+.modal {
+    display: none; 
+    /* position: fixed;  */
+    z-index: 2; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; 
+    background-color: rgba(0, 0, 0, 0.5); 
+}
+.modalHidden {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s linear;
+}
+.modal-content {
+    height: auto;
+    width: 60vw; 
+    background-color: var(--myWhite);
+    margin: 15% auto; 
+    padding: 1.5rem;
+    border: 2.5px solid var(--myPurple);
+    border-radius: 0%;
+}
+.close {
+    width: 1.5vw;
+    color: var(--myPurple);
+    float: right;
+    font-weight: bold;
+    cursor: pointer;
+}
+.close:hover,
+.close:focus {
+    color: var(--myOrange);
+    text-decoration: none;
+    cursor: pointer;
+}
+.modal button {
+    background-color: var(--myPurple);
+    color: var(--myWhite);
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 0%;
+    cursor: pointer;
+}
+.modal button:hover {
+    background-color: var(--myWhite);
+    color:var(--myPurple);
+    border: 1.5px solid var(--myPurple);
+}
+
+/*--------------------------------
+SETTAGGI SEZIONE LISTA CATEGORIE
+---------------------------------*/
+.spacer{
+    height: 30%;
+    background-color: var(--myPurple);
+    padding: 2.5%;
+}
+.categorie{
+    font-size: 85%;
+}
+
+/*--------------------------------
+SETTAGGI HEADER WELCOME
+---------------------------------*/
+.bgHeader{
+    padding: 10%;
+    min-height: 80vh;
+    max-height: 80vh;
+    background: linear-gradient(rgba(160, 0, 240, 0.37) , rgba(0, 0, 0, 0.404)) ,  url('https://plus.unsplash.com/premium_photo-1684785617500-fb22234eeedd?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-position: center;
+    background-size: cover;
+}
+.myBtnWelcome{
+    background-color: var(--myOrange);
+    color: white;
+    font-weight:500;
+    padding: 2% 5%;
+}
+.myBtnWelcome:hover{
+    background-color: rgb(219, 159, 5);
+}
+.hiddenAnimation{
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+#allCategories{
+    cursor: pointer;
+}
+
+/*--------------------------------
+SETTAGGI LOGIN
+---------------------------------*/
+.loginHeight{
+    height: 80vh;
+}
+.loginBackground{
+    background-color: var(--myWhite);
+}
+.loginForm{
+    min-width: 45vh;
+    max-width: 45vh;
+    border: 2.5px solid var(--myPurple);
+    padding: 2.5vh;
+}
+.form-control.is-invalid{
+    border-color: var(--bs-form-invalid-border-color);
+    box-shadow: none;
+    background-image: none !important;
+}
+.form-control.is-invalid:focus {
+    border-color: var(--bs-form-invalid-border-color);
+    box-shadow: none;
+    background-image: none !important;
+}
+input[type="checkbox"]:checked{
+    background-color: var(--myPurple);
+    color: var(--myPurple);
+}
+.form-control{
+    border:none;
+    border-bottom: 1px solid grey;
+    box-shadow: none;
+    border-radius: 0;
+}
+.form-control:focus {
+    color: var(--bs-body-color);
+    background-color: none;
+    border-color: var(--bs-border-color);
+    outline: 0;
+    box-shadow: none;
+}
+.form-check-input:focus {
+    border-color:var(--bs-border-color);
+    outline: 0px;
+    box-shadow: none;
+}
+.btn{
+    border-radius: 0;
+}
+.btnLogin:hover{
+    background-color: var(--myWhite);
+    color:var(--myPurple);
+    border: 1.5px solid var(--myPurple);
+}
+.fs-7{
+    font-size: 80%;
+}
+input[type="checkbox"]{
+    cursor: pointer;
+}
+
+/*--------------------------------
+SETTAGGI REGISTER
+---------------------------------*/
+.registerSection{
+    height: 90vh;
+}
+.registerHeight{
+    min-height: 100% 
+}
+.registerBackground{
+    background-color: var(--myWhite);
+}
+.registerForm{
+    width: 100%;
+    border: 2px solid var(--myPurple);
+    padding: 2.5vh;
+    background-color: rgb(255, 255, 255);
+}
+select{
+    min-height: 3vh;
+    border-color:none;
+    cursor: pointer;
+}
+select:focus{
+    min-height: 3vh;
+    border-color: none;
+    outline: none;
+}
+.error{
+    position:relative;
+    right: 2vh;
+}
+.is-invalid{
+    border: 2px solid var(--myPurple);
+    border-color: var(--myPurple) !important;
+}
+.errorRegister{
+    font-size: 75%;
+}
+.passwordContainer{
+    position: relative;
+}
+.openEyeIcon{
+    height: 3vh;
+    width: 3vh;
+    background-image: url(/public/media/eye-solid.svg);
+    /*  background-size: contain; */
+    background-size: 2vh;
+    background-repeat: no-repeat;
+    /* top: 50%;
+    right: 5%; */
+    top: 56%;
+    right: 1%;
+    cursor: pointer;
+}
+.closedEyeIcon{
+    height: 3vh;
+    width: 3vh;
+    background-image: url(/public/media/eye-slash-solid.svg);
+    /* background-size: contain; */
+    background-size: 2vh;
+    background-repeat: no-repeat;
+    /*  top: 50%;
+    right: 5%; */
+    top: 56%;
+    right: 1%;
+    cursor: pointer;
+}
+.openEyeIconLogin{
+    height: 3vh;
+    width: 3vh;
+    background-image: url(/public/media/eye-solid.svg);
+    /* background-size: contain; */
+    background-size: 2vh;
+    background-repeat: no-repeat;
+    /*  top: 75%;
+    right: 1%; */
+    top: 84%;
+    right: 1%;
+    cursor: pointer;
+}
+.closedEyeIconLogin{
+    height: 3vh;
+    width: 3vh;
+    background-image: url(/public/media/eye-slash-solid.svg);
+    /* background-size: contain; */
+    background-size: 2vh;
+    background-repeat: no-repeat;
+    /*  top: 75%;
+    right: 1%; */
+    top: 84%;
+    right: 1%;
+    cursor: pointer;
+}
+.inputContainer{
+    min-height: 106px;
+    max-height: 106px;
+}
+.checkBoxDati{
+    font-size: 75%;
+}
+
+/*--------------------------------
+SETTAGGI CREATE ANNOUNCEMENTS
+---------------------------------*/
+.createAnnouncementsHeight{
+    min-height: 90vh;
+}
+.createAnnouncementsBackground{
+    background-color: var(--myWhite);
+}
+.createAnnouncementsForm{
+    min-width: 45vh;
+    max-width: 45vh;
+    border: 2.5px solid var(--myPurple);
+    padding: 2.5vh;
+}
+.customFileUpload {
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+    background-color: var(--myWhite);
+    border: none;
+}
+.imgpreview{
+    height: 9.3rem;
+    width: 9.3rem;
+}
+.btnEliminaPreview{
+    border: 1px solid var(--myOrange);
+    border-radius: 50%;
+    font-size: 65%;
+    font-weight: bolder;
+}
+.btnEliminaPreview:hover{
+    border: 1.5px solid var(--myOrange);
+    color: var(--myOrange);
+    border-radius: 50%;
+    font-size: 65%;
+    font-weight: bolder;
+}
+
+/*--------------------------------
+SETTAGGI SHOW ANNOUNCEMENTS
+---------------------------------*/
+/* Cards*/
+h5, .h5 {
+    font-size: 120%;
+}
+
+/*--------------------------------
+SETTAGGI LAVORA CON NOI
+---------------------------------*/
+.lavoraConNoiHeight{
+    min-height: 85vh;
+}
+.textareaLavoraConNoi{
+    resize: none;
+}
+.textareaBorder{
+    border: 2px solid var(--myPurple);
+}
+
+/*--------------------------------
+SETTAGGI REVISOR
+---------------------------------*/
+.btnApprove:hover{
+    background-color: var(--myWhite);
+    color:var(--myPurple);
+    border: 1.5px solid var(--myPurple);
+}
+.btnReject:hover{
+    background-color: var(--myWhite);
+    color: var(--myOrange);
+    border: 1.5px solid var(--myOrange);
+}
+.swiperRevisorContainer{
+    height: auto;
+    width: 100%;
+}
+
+/*--------------------------------
+SETTAGGI MAIN COMPONENTS
+---------------------------------*/
+/* SWIPER */
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.swiper-slide img {
+    display: block;
+    height: 25%;
+    width: 25%;
+    object-fit: cover;
+}
+.swiperRevisorSlide{
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 25vh;
+    max-width: auto;
+}
+.swiperRevisorSlide img{
+    display: block;
+    height: auto;
+    min-width: 25vh;
+    max-width: 25vh;
+    object-fit: cover;
+}
+
+/*--------------------------------
+SETTAGGI SHOW CATEGORY
+---------------------------------*/
+.btnNessunAnn{
+    color: var(--myWhite);
+}
+.btnNessunAnn:hover{
+    background-color: var(--myWhite);
+    color:var(--myPurple);
+    border: 1.5px solid var(--myPurple);
+}
+
+/*--------------------------------
+SETTAGGI FOOTER COMPONENTS
+---------------------------------*/
+footer{
+    box-shadow: 1px -1px 7px 1px #000000;
+}
+ul{
+    list-style: none;
+    color: black;
+}
+.logoFooter{
+    height: 5vh;
+}
+
+/*--------------------------------
+MEDIA QUERIES
+--------------------------------*/
+/* XXL Displays */
+/* @media screen and (min-width: 1400px) {
+} */
+
+/*XL Displays*/
+@media (min-width: 1200px) and (max-width: 1399px) {
+    .linkContainer{
+        position: relative;
+        right: 8%;
+    }
+    .navbar-brand {
+        position: relative;
+        left: 6%;
+    }
+}
+
+/* LG Displays */
+@media (min-width: 992px) and (max-width:1199px) {
+    .linkContainer{
+        position: relative;
+        right: 8%;
+    }
+    .navbar-brand {
+        position: relative;
+        left: 6%;
+    }
+}
+
+/* MD Displays */
+@media (min-width: 768px) and (max-width:991px) {
+    .linkContainer{
+        position: relative;
+        right: 0%;
+    }
+    .navbar-brand {
+        position: relative;
+        left: 0%;
+    }
+}
+
+/* SM Displays */
+@media (min-width: 576px) and (max-width:767px){
+    .nav-link{
+        margin: 0 1vh;
+    }
+}
+
+/* XS Displays */
+@media (min-width: 0px) and (max-width:575px){
+    .countRevision{
+        position: absolute;
+        top:49% !important;
+        left: 6% !important;
+        font-size: 50%;
+    }
+    .searchInput{
+        min-width: 40vw;
+        max-width: 40vw;
+    }
+}
